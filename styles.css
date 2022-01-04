@@ -2,6 +2,13 @@ html{
     margin: 0;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 :root{
     --grid-cols:1;
     --grid-rows:1;
@@ -9,6 +16,7 @@ html{
 
 #container{
     display: grid;
+    border: 0.5px solid black;
     margin: 50px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
@@ -19,14 +27,10 @@ html{
     border: 1px solid black;
 }
 
-.grid-item:hover,.grid-item:focus{
-    background-color:black;
-}
-
 
 .title{
     display: flex;
-    margin: 30px ;
+    margin: 20px ;
     justify-content: center;
     align-items:center;
 }
