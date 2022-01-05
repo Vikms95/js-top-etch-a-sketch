@@ -14,9 +14,26 @@ body{
     --grid-rows:1;
 }
 
+.title{
+    display: flex;
+    margin: 20px ;
+    justify-content: center;
+    align-items:center;
+}
+
+.button-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
 #container{
     display: grid;
     border: 0.5px solid black;
+    max-width: 960px;
+    max-height: 960px;
     margin: 50px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
@@ -33,9 +50,3 @@ body{
     background-color: black;
 }
 
-.title{
-    display: flex;
-    margin: 20px ;
-    justify-content: center;
-    align-items:center;
-}
