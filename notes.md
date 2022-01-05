@@ -8,4 +8,9 @@ Get reference of reset button, add an event listener which executes a function t
 Alongside the clear, prompt to the user asking for an integer (0-100) which will create a new grid with that size (size x size)
     -The grid will not change in size (done with fraction spacing (fr) in css grid)
     -The grid will not exceed the 100 squares per size (done with conditionals)
-    
+
+//TODO 
+-Having each pass just add another 10% of black to it so that only after 10 passes is the square completely black.
+-Add manual color picker 
+-Cool UI
+

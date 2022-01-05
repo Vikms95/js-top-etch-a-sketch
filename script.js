@@ -24,7 +24,7 @@ function addEventListenerNodeList(nodeList,event)
             event.target.className = "grid-item-black";
         });
     };
-};
+}
 
 //Changing attribute method
 function addEventListenerNodeListColor(color)
@@ -63,7 +63,7 @@ function resetGrid()
         divReference[i].className = "grid-item";
     }
     createGrid()
-};
+}
 
 function createGrid()
 {
@@ -82,7 +82,7 @@ function createGrid()
         alert("Invalid input! Grid not created");
         return;
     }
-};
+}
 
 function randomColor()
 {
@@ -113,5 +113,3 @@ const rainbowButtonReference = document.querySelector(".rainbow-button");
 rainbowButtonReference.addEventListener("click", () => {
     addEventListenerNodeListRainbow();
 })
-
-
