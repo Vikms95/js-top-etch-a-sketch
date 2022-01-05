@@ -14,7 +14,6 @@ function deleteRows()
     containerReference.textContent = "";
 }
 
-//Method 1 - Changing div class
 function addEventListenerNodeList(nodeList,event)
 {
     for (var i = 0, len = nodeList.length; i < len; i++)
@@ -40,11 +39,18 @@ function createGrid()
     const gridSize = prompt(
         "Select the squares per side of your new grid (from 0 to 100): "
         );
-
-    deleteRows();
-    makeRows(gridSize,gridSize);
-    let cellReference = document.querySelectorAll(".grid-item");
-    addEventListenerNodeList(cellReference, 'mouseover');
+    if(gridSize > 0 && gridSize <= 100)
+    {
+        deleteRows();
+        makeRows(gridSize,gridSize);
+        let cellReference = document.querySelectorAll(".grid-item");
+        addEventListenerNodeList(cellReference, 'mouseover');
+    }
+    else
+    {
+        alert("Invalid input! Grid not created");
+        return;
+    }
 };
 
 const containerReference = document.getElementById("container");
